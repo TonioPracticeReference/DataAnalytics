@@ -4,10 +4,11 @@ import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import AboutSection from "../components/AboutSection.astro";
 import ExperienceSection from "../components/ExperienceSection.astro";
-import ProjectsSection from "../components/ProjectsSection.astro";
+import ProjectsCarousel from "../components/ProjectsCarousel.astro";
 import ContactSection from "../components/ContactSection.astro";
 import Footer from "../components/Footer.astro";
 import { site } from "../data/site";
+import { projects } from "../data/portfolio";
 ---
 <BaseLayout title={`${site.name} · ${site.title}`} description={site.description}>
   <Header />
@@ -15,7 +16,7 @@ import { site } from "../data/site";
     <Hero />
     <AboutSection />
     <ExperienceSection />
-    <ProjectsSection />
+    <ProjectsCarousel projects={projects} />
     <ContactSection />
   </main>
   <Footer />
