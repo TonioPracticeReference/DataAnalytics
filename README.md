@@ -1,2 +1,0 @@
-# DataAnalytics
-For Upskill!
