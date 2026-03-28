@@ -19,7 +19,6 @@ interface Props {
 }
 
 const { projects = [] } = Astro.props;
-
 const total = projects.length;
 ---
 
@@ -112,18 +111,36 @@ const total = projects.length;
         type="button"
         data-prev
         aria-label="Previous project"
-        class="absolute left-3 top-1/2 z-10 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#07142f]/85 text-xl text-white opacity-0 shadow-lg backdrop-blur transition duration-300 hover:border-sky-300/50 hover:bg-[#0b1b3a] md:flex md:group-hover:opacity-100"
+        class="absolute left-3 top-1/2 z-10 hidden h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#07142f]/85 text-white opacity-0 shadow-lg backdrop-blur transition duration-300 hover:border-sky-300/50 hover:bg-[#0b1b3a] md:flex md:group-hover:opacity-100"
       >
-        ←
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="h-8 w-8">
+          <path
+            d="M15 4L7 12L15 20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </button>
 
       <button
         type="button"
         data-next
         aria-label="Next project"
-        class="absolute right-3 top-1/2 z-10 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#07142f]/85 text-xl text-white opacity-0 shadow-lg backdrop-blur transition duration-300 hover:border-sky-300/50 hover:bg-[#0b1b3a] md:flex md:group-hover:opacity-100"
+        class="absolute right-3 top-1/2 z-10 hidden h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#07142f]/85 text-white opacity-0 shadow-lg backdrop-blur transition duration-300 hover:border-sky-300/50 hover:bg-[#0b1b3a] md:flex md:group-hover:opacity-100"
       >
-        →
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="h-8 w-8">
+          <path
+            d="M9 4L17 12L9 20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </button>
 
       <div class="mt-6 flex items-center justify-between gap-4">
